@@ -1,0 +1,1 @@
+execute align y run teleport @s ~ ~ ~
