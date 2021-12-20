@@ -1,7 +1,15 @@
 # call as ani_data marker
 
 # reset Pose
-data modify entity @e[tag=ani_sel_as,limit=1] Pose set from entity @s data.StartData.Pose
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.Head set from entity @s data.StartData.Pose.Head
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.Body set from entity @s data.StartData.Pose.Body
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.LeftArm set from entity @s data.StartData.Pose.LeftArm
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.RightArm set from entity @s data.StartData.Pose.RightArm
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.LeftLeg set from entity @s data.StartData.Pose.LeftLeg
+data modify entity @e[tag=ani_sel_as,limit=1] Pose.RightLeg set from entity @s data.StartData.Pose.RightLeg
+
+# reset Variables
+execute store result score @e[tag=ani_sel_as,limit=1] ani_rot_s run data get entity @s data.StartData.Pose.Rotation
 
 execute store result score @e[tag=ani_sel_as,limit=1] ani_head_x_s run data get entity @s data.StartData.Pose.Head[0]
 execute store result score @e[tag=ani_sel_as,limit=1] ani_head_y_s run data get entity @s data.StartData.Pose.Head[1]
@@ -31,9 +39,6 @@ execute store result score @e[tag=ani_sel_as,limit=1] ani_rot_speed run data get
 execute store result score @e[tag=ani_sel_as,limit=1] ani_hdbo_speed run data get entity @s data.StartData.Pose.Speed.Hdbo
 execute store result score @e[tag=ani_sel_as,limit=1] ani_arm_speed run data get entity @s data.StartData.Pose.Speed.Arm
 execute store result score @e[tag=ani_sel_as,limit=1] ani_leg_speed run data get entity @s data.StartData.Pose.Speed.Leg
-
-# reset Rotation
-execute store result score @e[tag=ani_sel_as,limit=1] ani_rot_s run data get entity @s data.StartData.Pose.Rotation
 
 execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:util/soll_to_ist
 
