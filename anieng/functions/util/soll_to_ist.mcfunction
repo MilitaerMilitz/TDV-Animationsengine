@@ -14,14 +14,14 @@ scoreboard players operation @s ani_left_arm_x = @s ani_left_arm_x_s
 scoreboard players operation @s ani_left_arm_y = @s ani_left_arm_y_s
 scoreboard players operation @s ani_left_arm_z = @s ani_left_arm_z_s
 
-scoreboard players operation @s ani_rigt_arm_x = @s ani_rigt_arm_x_s
-scoreboard players operation @s ani_rigt_arm_y = @s ani_rigt_arm_y_s
-scoreboard players operation @s ani_rigt_arm_z = @s ani_rigt_arm_z_s
+scoreboard players operation @s ani_right_arm_x = @s ani_rigt_arm_x_s
+scoreboard players operation @s ani_right_arm_y = @s ani_rigt_arm_y_s
+scoreboard players operation @s ani_right_arm_z = @s ani_rigt_arm_z_s
 
 scoreboard players operation @s ani_left_leg_x = @s ani_left_leg_x_s
 scoreboard players operation @s ani_left_leg_y = @s ani_left_leg_y_s
 scoreboard players operation @s ani_left_leg_z = @s ani_left_leg_z_s
 
-scoreboard players operation @s ani_rigt_leg_x = @s ani_rigt_leg_x_s
-scoreboard players operation @s ani_rigt_leg_y = @s ani_rigt_leg_y_s
-scoreboard players operation @s ani_rigt_leg_z = @s ani_rigt_leg_z_s
+scoreboard players operation @s ani_right_leg_x = @s ani_rigt_leg_x_s
+scoreboard players operation @s ani_right_leg_y = @s ani_rigt_leg_y_s
+scoreboard players operation @s ani_right_leg_z = @s ani_rigt_leg_z_s

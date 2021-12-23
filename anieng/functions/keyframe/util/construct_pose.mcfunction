@@ -5,7 +5,7 @@
 data merge storage ani_out {data:{Pose:{Head:[0f,0f,0f], Body:[0f,0f,0f], LeftArm:[0f,0f,0f], RightArm:[0f,0f,0f], LeftLeg:[0f,0f,0f], RightLeg:[0f,0f,0f]}}}
 
 # store Rotation
-execute store result storage ani_out data.Pose.Rotation int 1 run scoreboard players get @s ani_rot
+execute store result storage ani_out data.Pose.Rotation float 1 run scoreboard players get @s ani_rot_s
 
 # store Pose and Speed
 execute store result storage ani_out data.Pose.Head[0] float 1 run scoreboard players get @s ani_head_x_s
@@ -32,7 +32,7 @@ execute store result storage ani_out data.Pose.RightLeg[0] float 1 run scoreboar
 execute store result storage ani_out data.Pose.RightLeg[1] float 1 run scoreboard players get @s ani_rigt_leg_y_s
 execute store result storage ani_out data.Pose.RightLeg[2] float 1 run scoreboard players get @s ani_rigt_leg_z_s
 
-execute store result storage ani_out data.Pose.Speed.Rotation float 1 run scoreboard players get @s ani_rot_speed
-execute store result storage ani_out data.Pose.Speed.Hdbo float 1 run scoreboard players get @s ani_hdbo_speed
-execute store result storage ani_out data.Pose.Speed.Arm float 1 run scoreboard players get @s ani_arm_speed
-execute store result storage ani_out data.Pose.Speed.Leg float 1 run scoreboard players get @s ani_leg_speed
+execute store result storage ani_out data.Pose.Speed.Rotation int 1 run scoreboard players get @s ani_rot_speed
+execute store result storage ani_out data.Pose.Speed.Hdbo int 1 run scoreboard players get @s ani_hdbo_speed
+execute store result storage ani_out data.Pose.Speed.Arm int 1 run scoreboard players get @s ani_arm_speed
+execute store result storage ani_out data.Pose.Speed.Leg int 1 run scoreboard players get @s ani_leg_speed

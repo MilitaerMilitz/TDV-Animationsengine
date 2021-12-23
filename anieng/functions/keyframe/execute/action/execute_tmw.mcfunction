@@ -1,3 +1,4 @@
+tag @s add ani_walk_nmod
 tag @s add ani_walk_init
 tag @s add ani_time_walk
 

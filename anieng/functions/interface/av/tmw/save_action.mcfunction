@@ -16,5 +16,6 @@ execute store result entity @e[tag=ani_sel_data,limit=1] data.Action.narm byte 1
 
 execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/execute/action/execute_action
 
+# clear
 tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_as] remove ani_sel_as
