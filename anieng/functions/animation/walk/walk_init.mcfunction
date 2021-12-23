@@ -1,10 +1,9 @@
-# call as Armorstand
+# call as animation Armorstand
 
 # tag management
 tag @s add ani_walk
 tag @s add ani_walk_pos
 tag @s remove ani_walk_init
-tag @s remove ani_walk_fin
 
 # mark action running
 scoreboard players set @s ani_run 1
