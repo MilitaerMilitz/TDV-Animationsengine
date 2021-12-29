@@ -6,7 +6,7 @@ execute store result score #action ani_ram run data get entity @e[tag=ani_sel_da
 
 execute if score #action ani_ram matches 5 run function anieng:keyframe/execute/action/execute_tmw
 
-execute if data entity @e[tag=ani_sel_data,limit=1] data.Action.Tee run function anieng:keyframe/execute/action/execute_tee
+execute if data entity @e[tag=ani_sel_data,limit=1] data.Tee run function anieng:keyframe/execute/action/execute_tee
 
 scoreboard players reset #action ani_ram
 tag @e[tag=ani_sel_data] remove ani_sel_data

@@ -1,5 +1,8 @@
 function anieng:util/find_as
 
-scoreboard players set @e[tag=ani_sel_as] ani_rigt_arm_x_s 0
+scoreboard players set #value ani_ram 0
 
+execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:animation/move/instant/right_arm_x
+
+# clear
 tag @e[tag=ani_sel_as] remove ani_sel_as

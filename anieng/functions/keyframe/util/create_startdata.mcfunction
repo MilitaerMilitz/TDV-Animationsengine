@@ -1,4 +1,5 @@
 # call as ani_data marker
+# create StartData and stores it into ani_data
 
 # store previous Pose
 execute as @e[tag=ani_sel_as] at @s run function anieng:keyframe/util/construct_pose

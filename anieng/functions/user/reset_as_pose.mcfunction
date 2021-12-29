@@ -1,30 +1,34 @@
+# call as animation Armorstand
 # Resets Armorstand pose -> set all body tiles and speeds 0
 
-scoreboard players set @s ani_rot_s 0
+scoreboard players set #value ani_ram 0
 
-scoreboard players set @s ani_head_x_s 0
-scoreboard players set @s ani_head_y_s 0
-scoreboard players set @s ani_head_z_s 0
+function anieng:animation/move/instant/rotate
 
-scoreboard players set @s ani_body_x_s 0
-scoreboard players set @s ani_body_y_s 0
-scoreboard players set @s ani_body_z_s 0
+function anieng:animation/move/instant/body_x
+function anieng:animation/move/instant/body_y
+function anieng:animation/move/instant/body_z
 
-scoreboard players set @s ani_left_arm_x_s 0
-scoreboard players set @s ani_left_arm_y_s 0
-scoreboard players set @s ani_left_arm_z_s 0
+function anieng:animation/move/instant/head_x
+function anieng:animation/move/instant/head_y
+function anieng:animation/move/instant/head_z
 
-scoreboard players set @s ani_rigt_arm_x_s 0
-scoreboard players set @s ani_rigt_arm_y_s 0
-scoreboard players set @s ani_rigt_arm_z_s 0
+function anieng:animation/move/instant/left_arm_x
+function anieng:animation/move/instant/left_arm_y
+function anieng:animation/move/instant/left_arm_z
 
-scoreboard players set @s ani_left_leg_x_s 0
-scoreboard players set @s ani_left_leg_y_s 0
-scoreboard players set @s ani_left_leg_z_s 0
+function anieng:animation/move/instant/right_arm_x
+function anieng:animation/move/instant/right_arm_y
+function anieng:animation/move/instant/right_arm_z
 
-scoreboard players set @s ani_rigt_leg_x_s 0
-scoreboard players set @s ani_rigt_leg_y_s 0
-scoreboard players set @s ani_rigt_leg_z_s 0
+function anieng:animation/move/instant/left_leg_x
+function anieng:animation/move/instant/left_leg_y
+function anieng:animation/move/instant/left_leg_z
+
+function anieng:animation/move/instant/right_leg_x
+function anieng:animation/move/instant/right_leg_y
+function anieng:animation/move/instant/right_leg_z
+
 
 # speed
 scoreboard players set @s ani_rot_speed 1
