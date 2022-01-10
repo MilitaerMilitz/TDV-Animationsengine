@@ -2,11 +2,13 @@
 
 # execute Pose animation
 execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/construct_pose
-execute as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/util/load_startdata
+
+data modify storage ani_in data.Snap set from entity @s data.EndData
+execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/load_snapshot
+
 data modify entity @s data.Ram.Pose set from storage ani_out data.Pose
 data modify storage ani_in data.Pose set from storage ani_out data.Pose
-scoreboard players set #animate ani_ram 1
-execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/load_pose
+execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/load_pose_animate
 
 # reset previous stored action
 data modify entity @s data.Action set value {}

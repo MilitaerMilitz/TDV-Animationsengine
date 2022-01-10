@@ -67,3 +67,5 @@ scoreboard players set @s ani_left_leg_z_s 0
 scoreboard players set @s ani_rigt_leg_x_s 0
 scoreboard players set @s ani_rigt_leg_y_s 0
 scoreboard players set @s ani_rigt_leg_z_s 0
+
+scoreboard players add debug ani_selkey 1
