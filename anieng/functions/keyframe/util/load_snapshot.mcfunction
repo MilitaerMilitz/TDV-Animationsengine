@@ -13,7 +13,7 @@ function anieng:keyframe/util/load_pose_instant
 data modify entity @s Pos set from storage ani_ram data.Snap.Pos
 
 # [debug] set cooldown for existence checking between Armorstand and data marker
-scoreboard players set #vtout ani_ram 20
+scoreboard players set @s ani_vtout 20
 
 # clear
 data remove storage ani_ram data

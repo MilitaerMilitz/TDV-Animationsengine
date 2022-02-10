@@ -1,4 +1,4 @@
-# call as Armorstand
+# call as animation Armorstand
 
 execute store result score @s ani_tee_x run data get entity @e[tag=ani_sel_data,limit=1] data.Tee[0]
 execute store result score @s ani_tee_y run data get entity @e[tag=ani_sel_data,limit=1] data.Tee[1]

@@ -1,5 +1,6 @@
 scoreboard objectives add ani_ram dummy
 scoreboard objectives add ani_run dummy
+scoreboard objectives add ani_vtout dummy
 
 # interface
 scoreboard objectives add ani_if_summand dummy

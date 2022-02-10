@@ -1,5 +1,5 @@
 # call as animation Armorstand
-# create Snapshot od animation Armorstand and stores it into storage ani_out data.Snap
+# create Snapshot of animation Armorstand and stores it into storage ani_out data.Snap
 
 # store previous Pose
 function anieng:keyframe/util/construct_pose

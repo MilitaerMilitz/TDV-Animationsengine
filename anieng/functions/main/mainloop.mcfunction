@@ -1,5 +1,15 @@
 # check scores und resets all if something is non existent
-function anieng:util/check_scores
+function anieng:util/set_init_score_if_unset
+
+# find all needed entities
+tag @s add ani_sel_as
+function anieng:util/find_data
+function anieng:util/find_tiles_from_act
+
+# exist check ani_act and ani_data are one unit, if one of them is killed the other part will vanish too.
+execute if score @s ani_vtout matches 1.. run scoreboard players remove @s ani_vtout 1
+execute if score @s ani_vtout matches ..0 run scoreboard players reset @s ani_vtout
+execute unless score @s ani_vtout matches -10.. run function anieng:main/vanish_check
 
 # glowing of selected Armorstands
 execute as @e[tag=ani_glow,type=armor_stand] run effect give @s glowing 1 1 true
@@ -48,3 +58,12 @@ execute if entity @s[tag=ani_rot_walk_rot] if score @s ani_rot = @s ani_rot_s ru
 execute if entity @s[tag=ani_align_walk_init] run function anieng:animation/walk/align_walk/align_walk
 execute if entity @s[tag=ani_align_walk] run function anieng:animation/walk/align_walk/align_walk
 execute if entity @s[tag=ani_align_walk_end] run function anieng:animation/walk/align_walk/align_walk_end
+
+# head/body
+function anieng:main/tile_loop
+
+# Clear
+tag @s remove ani_sel_as
+tag @e[tag=ani_sel_data] remove ani_sel_data
+tag @e[tag=ani_sel_body] remove ani_sel_body
+tag @e[tag=ani_sel_head] remove ani_sel_head
