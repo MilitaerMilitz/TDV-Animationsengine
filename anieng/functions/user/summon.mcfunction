@@ -20,7 +20,7 @@ data modify entity @e[tag=ani_sel_data,limit=1] data.StartData set from storage 
 data remove storage ani_out data
 
 # create initial keyframe
-execute as @e[tag=ani_sel_data] at @s run function anieng:keyframe/create_keyframe
+execute as @e[tag=ani_sel_as] at @s run function anieng:keyframe/create_keyframe
 
 # remove spawn marks
 tag @e[tag=ani_sel_as] remove ani_sel_as

@@ -3,8 +3,11 @@ function anieng:util/set_init_score_if_unset
 
 # find all needed entities
 tag @s add ani_sel_as
-function anieng:util/find_data
 function anieng:util/find_tiles_from_act
+
+#execute as @e[tag=ani_sel_body] run scoreboard players add body ani_ram 1
+#execute as @e[tag=ani_sel_head] run scoreboard players add head ani_ram 1
+#execute as @e[tag=ani_sel_data] run scoreboard players add data ani_ram 1
 
 # exist check ani_act and ani_data are one unit, if one of them is killed the other part will vanish too.
 execute if score @s ani_vtout matches 1.. run scoreboard players remove @s ani_vtout 1
