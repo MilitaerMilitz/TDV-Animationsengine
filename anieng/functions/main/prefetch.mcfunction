@@ -37,6 +37,7 @@ scoreboard objectives add ani_ptee_z dummy
 # numbers
 scoreboard objectives add numbers dummy
 scoreboard players set -1 numbers -1
+scoreboard players set 2 numbers 2
 scoreboard players set 7 numbers 7
 scoreboard players set 360 numbers 360
 scoreboard players set 180 numbers 180

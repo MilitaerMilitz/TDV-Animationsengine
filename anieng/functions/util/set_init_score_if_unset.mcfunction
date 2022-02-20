@@ -5,7 +5,7 @@ execute unless score @s ani_action matches 1.. run scoreboard players set @s ani
 execute unless score @s ani_walk_speed matches 1.. run scoreboard players set @s ani_walk_speed 1
 
 execute unless score @s ani_keyam matches 0.. run scoreboard players set @s ani_keyam 0
-execute unless score @s ani_selkey matches 0.. run scoreboard players set @s ani_selkey 0
+execute unless score @s ani_selkey matches 0.. run scoreboard players set @s ani_selkey 1
 execute unless score @s ani_run matches 0.. run scoreboard players set @s ani_run 0
 
 # actual scores
