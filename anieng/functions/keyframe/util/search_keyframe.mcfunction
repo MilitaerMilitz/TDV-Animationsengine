@@ -1,5 +1,8 @@
-# call as ani_data
-# searchs selected keyframe and moves it to Position 0
+# @s: ani_data
+# pre: ani_sel_as exists
+# do: Searchs selected keyframe and moves it to Position 0
+# post: Keyframe which belong to ani_selkey is at first position.
+# return: void
 
 execute store result score #frame ani_ram run data get entity @s data.Keyframes[0].Frame
 execute unless score #frame ani_ram = @e[tag=ani_sel_as,limit=1] ani_selkey run function anieng:keyframe/util/search_keyframe_rek
