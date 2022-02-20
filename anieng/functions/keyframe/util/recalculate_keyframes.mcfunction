@@ -1,8 +1,8 @@
 # @s: ani_act
 # pre: ani_sel_data exists
 # do: Propagate changes in keyframe to all following keyframes
-# post: Changesv in keyframe are now propagated; Ram will be overitten by loading last keyframe
-# return: voidc
+# post: Changes in keyframe are now propagated; Ram will be overitten by loading last keyframe
+# return: void
 
 # save selected keyframe
 scoreboard players operation #Frame ani_ram = @s ani_selkey
