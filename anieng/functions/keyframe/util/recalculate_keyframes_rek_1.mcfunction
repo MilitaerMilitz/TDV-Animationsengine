@@ -3,7 +3,7 @@
 
 # load previous into ram and select new
 function anieng:keyframe/util/load_keyframe_into_ram
-execute as @e[tag=ani_sel_as,limit=1] run scoreboard players add @s ani_selkey 1
+scoreboard players add @e[tag=ani_sel_as,limit=1] ani_selkey 1
 function anieng:keyframe/util/search_keyframe
 
 # Propagate EndData to next keyframe StartData
