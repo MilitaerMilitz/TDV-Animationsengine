@@ -9,6 +9,7 @@ scoreboard players add @s ani_keyam 1
 
 # construct keyframe and append it
 function anieng:keyframe/util/build_new_keyframe
+execute as @e[tag=ani_sel_data,limit=1] run function anieng:keyframe/util/move_first_keyframe_to_end
 data modify entity @e[tag=ani_sel_data,limit=1] data.Keyframes prepend from storage ani_out data
 data remove storage ani_out data
 function anieng:keyframe/util/load_keyframe_into_ram
