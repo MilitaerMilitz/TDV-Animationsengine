@@ -3,9 +3,6 @@
 # post: ani_act ani_action is now 2
 # return: void
 
-# [Debug function file running]
-scoreboard players add debug ani_ram 1
-
 data modify entity @s data.StartData set from entity @s data.EndData
 data modify entity @s data.Transition set value {}
 data modify entity @s data.EndData set value {}
