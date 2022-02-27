@@ -12,6 +12,7 @@ data modify storage ani_in data.nbt1 set from entity @s data.Keyframes[0].EndDat
 
 # Overwrite old
 data modify entity @s data.Keyframes[0] set from storage ani_out data
+data remove storage ani_out data
 
 # Saves new EndData for if condition
 data modify storage ani_in data.nbt2 set from entity @s data.Keyframes[0].EndData
