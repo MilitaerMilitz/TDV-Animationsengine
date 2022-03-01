@@ -2,6 +2,8 @@
 # do: Is loaded when Datapack is loaded. It creates all scoreboards.
 # return: void
 
+function arr_math:setup
+
 scoreboard objectives add ani_ram dummy
 scoreboard objectives add ani_run dummy
 scoreboard objectives add ani_vtout dummy
@@ -51,6 +53,8 @@ scoreboard players set 2 numbers 2
 scoreboard players set 7 numbers 7
 scoreboard players set 360 numbers 360
 scoreboard players set 180 numbers 180
+scoreboard players set 1000 numbers 1000
+scoreboard players set 1000000 numbers 1000000
 
 # ist scores
 scoreboard objectives add ani_rot dummy
