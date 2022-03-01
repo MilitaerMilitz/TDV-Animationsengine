@@ -1,0 +1,3 @@
+Math API by https://github.com/gibbsly
+
+Math API: https://github.com/gibbsly/mc-floating-point-arithmetic
