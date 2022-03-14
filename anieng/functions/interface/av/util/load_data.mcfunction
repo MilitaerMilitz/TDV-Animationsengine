@@ -7,8 +7,9 @@ execute if score @e[tag=ani_sel_as,limit=1] ani_tee_y matches -2147483648.. run 
 execute if score @e[tag=ani_sel_as,limit=1] ani_tee_z matches -2147483648.. run scoreboard players operation @s ani_ptee_z = @e[tag=ani_sel_as,limit=1] ani_tee_z
 
 scoreboard players operation @s ani_pwalk_speed = @e[tag=ani_sel_as,limit=1] ani_walk_speed
-scoreboard players operation @s ani_ptbw = @e[tag=ani_sel_as,limit=1] ani_tbw
+scoreboard players operation @s ani_walk_ptbw = @e[tag=ani_sel_as,limit=1] ani_walk_tbw
 scoreboard players operation @s ani_ptime_walk = @e[tag=ani_sel_as,limit=1] ani_time_walk
-scoreboard players operation @s ani_pnarm = @e[tag=ani_sel_as,limit=1] ani_narm
+scoreboard players operation @s ani_walk_pnarm = @e[tag=ani_sel_as,limit=1] ani_walk_narm
 
 tag @e[tag=ani_sel_as] remove ani_sel_as
+

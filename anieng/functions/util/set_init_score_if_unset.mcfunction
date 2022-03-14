@@ -1,6 +1,6 @@
 # set init score -> everything (body tiles and speeds) 0
 
-execute unless score @s ani_walk_narm matches 1.. run scoreboard players set @s ani_walk_narm 1
+execute unless score @s ani_walk_narm matches 0.. run scoreboard players set @s ani_walk_narm 1
 execute unless score @s ani_action matches 1.. run scoreboard players set @s ani_action 2
 execute unless score @s ani_walk_speed matches 1.. run scoreboard players set @s ani_walk_speed 1
 
