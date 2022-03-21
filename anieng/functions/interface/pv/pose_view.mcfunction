@@ -8,50 +8,50 @@ scoreboard players operation #numbertolen ani_ram = @s ani_if_summand
 function anieng:interface/text_util/farmart_number_len2
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_rot
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_head_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_head_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_head_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_body_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_body_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_body_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_arm_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_arm_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_arm_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_arm_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_arm_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_arm_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_leg_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_leg_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_left_leg_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_leg_x
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_leg_y
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 scoreboard players operation #numbertolen ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_right_leg_z
-function anieng:interface/text_util/farmart_number_len3
+function anieng:interface/text_util/farmart_number_len_pm_3
 
 scoreboard players operation @s ani_phdbo_speed = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_hdbo_speed
 scoreboard players operation @s ani_parm_speed = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_arm_speed
