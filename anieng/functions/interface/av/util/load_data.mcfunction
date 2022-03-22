@@ -10,5 +10,12 @@ scoreboard players operation @s ani_pwalk_speed = @e[tag=ani_sel_as,limit=1] ani
 scoreboard players operation @s ani_walk_ptbw = @e[tag=ani_sel_as,limit=1] ani_walk_tbw
 scoreboard players operation @s ani_ptime_walk = @e[tag=ani_sel_as,limit=1] ani_time_walk
 scoreboard players operation @s ani_walk_pnarm = @e[tag=ani_sel_as,limit=1] ani_walk_narm
+scoreboard players operation @s ani_arwalk_prot = @e[tag=ani_sel_as,limit=1] ani_arwalk_rot
+
+scoreboard players operation @s ani_walk_ptbw_x = @e[tag=ani_sel_as,limit=1] ani_walk_tbw_x
+scoreboard players operation @s ani_walk_ptbw_y = @e[tag=ani_sel_as,limit=1] ani_walk_tbw_y
+scoreboard players operation @s ani_walk_ptbw_z = @e[tag=ani_sel_as,limit=1] ani_walk_tbw_z
+
 
 tag @e[tag=ani_sel_as] remove ani_sel_as
+
