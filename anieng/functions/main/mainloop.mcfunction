@@ -14,9 +14,6 @@ execute if score @s ani_vtout matches 1.. run scoreboard players remove @s ani_v
 execute if score @s ani_vtout matches ..0 run scoreboard players reset @s ani_vtout
 execute unless score @s ani_vtout matches -10.. run function anieng:main/vanish_check
 
-# glowing of selected Armorstands
-execute as @e[tag=ani_glow,type=armor_stand] run effect give @s glowing 1 1 true
-
 # move engine
 execute unless score @s ani_rot_s = @s ani_rot run function anieng:animation/move/rotate
 
@@ -64,6 +61,10 @@ execute if entity @s[tag=ani_align_walk_end] run function anieng:animation/walk/
 
 # head/body
 function anieng:main/tile_loop
+
+# ani_play
+execute if entity @s[tag=ani_play,scores={ani_run=0}] if score @s ani_selkey = @s ani_keyam run function anieng:play/play_end
+execute if entity @s[tag=ani_play] if score @s ani_selkey < @s ani_keyam run function anieng:play/check_and_play
 
 # Clear
 tag @s remove ani_sel_as

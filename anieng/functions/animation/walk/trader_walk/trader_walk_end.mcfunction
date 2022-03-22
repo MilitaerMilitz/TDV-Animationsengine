@@ -1,6 +1,6 @@
 tag @s remove ani_trader_walk
 tag @s remove ani_trader_walk_end
-tag @s remove ani_walk_ntp
+tag @s remove ani_walk_ntep
 tag @s add ani_walk_end
 
 execute store result score #auuid0 ani_ram run data get entity @s UUID[0]

@@ -1,7 +1,7 @@
 # @s: ani_act
 # pre: ani_sel_data exists
 # do: Propagate changes in keyframe to all following keyframes
-# post: Changes in keyframe are now propagated; Ram will be overitten by loading last keyframe
+# post: Changes in keyframe are now propagated; Ram will be overitten by loading last keyframe; ani_ram data is cleared
 # return: void
 
 # save selected keyframe

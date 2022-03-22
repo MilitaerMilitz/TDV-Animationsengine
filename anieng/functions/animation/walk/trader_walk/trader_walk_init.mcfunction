@@ -1,6 +1,6 @@
 tag @s remove ani_trader_walk_init
 tag @s add ani_trader_walk
-tag @s add ani_walk_ntp
+tag @s add ani_walk_ntep
 tag @s add ani_walk_init
 
 summon wandering_trader ~ -2 ~ {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,DespawnDelay:199999980,Tags:["ani_trader"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:199999980,ShowParticles:0b}],Offers:{},HandItems:[{}, {id:"minecraft:minecart",Count:1b,tag:{UUID:{}}}]}

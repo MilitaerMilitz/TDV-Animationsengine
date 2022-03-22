@@ -1,6 +1,7 @@
 # call as animation Armorstand
 # loads pose instant of Armorstand containing in ani_in: data.Pose
 # delete storage ani_in
+# inefficient
 
 # Rotation
 execute store result score #value ani_ram run data get storage ani_in data.Pose.Rotation

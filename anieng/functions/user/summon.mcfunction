@@ -1,11 +1,11 @@
 # summon Armorstand with data marker
-summon armor_stand ~ ~ ~ {Silent:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_act","ani_sel_as"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]},Passengers:[{id:"minecraft:marker",Tags:["ani_data","ani_sel_data"],data:{}}],ArmorItems:[{id:"minecraft:leather_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b},{},{}]}
+summon armor_stand ~ ~ ~ {Invisible:1b,Silent:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_act","ani_sel_as"],Pose:{Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f],Head:[0f,0f,0f]},Passengers:[{id:"minecraft:marker",Tags:["ani_data","ani_sel_data"],data:{}}],ArmorItems:[{id:"minecraft:leather_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b},{},{}]}
 
 # summon body tile
-summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_body","ani_tile","ani_sel_body"],HandItems:[{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}},{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}}],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b},{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}}]}
+summon armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_body","ani_tile","ani_sel_body"],HandItems:[{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}},{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}}],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b},{id:"minecraft:arrow",Count:1b,tag:{CustomModelData:1}}]}
 
 # summon head tile
-summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_head","ani_tile","ani_sel_head"],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}]}
+summon armor_stand ~ ~ ~ {Invisible:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["ani_head","ani_tile","ani_sel_head"],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b}]}
 
 # setup
 data modify entity @e[tag=ani_sel_data,limit=1] data set value {Owner:{}, BodyUUID:{}, HeadUUID:{}, Keyframes:[], StartData:{}, Transition:{}, EndData:{}, Action:{}, Tee:{}}

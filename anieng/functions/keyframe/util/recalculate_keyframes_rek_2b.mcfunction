@@ -1,16 +1,16 @@
 # <help function>
 # @s: ani_data
 
+# Read Action
+execute store result score #action ani_ram run data get entity @s data.Keyframes[0].Action.id
+
 # Enew = Snew + Told;
-# rekursion call -> propagate;
-data modify storage ani_in data.StartData set from entity @s data.Keyframes[0].StartData
-data modify storage ani_in data.Transition set from entity @s data.Keyframes[0].Transition
-function anieng:keyframe/util/create_enddata
-data modify entity @s data.Keyframes[0].EndData set from storage ani_out data.EndData
+execute if score #action ani_ram matches 5 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_tmw
+execute if score #action ani_ram matches 0 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_standard
 
 # clear
 data remove storage ani_out data
 
-# propagate
+# rekursion call -> propagate;
 execute unless score @e[tag=ani_sel_as,limit=1] ani_selkey = @e[tag=ani_sel_as,limit=1] ani_keyam run function anieng:keyframe/util/recalculate_keyframes_rek_1
 

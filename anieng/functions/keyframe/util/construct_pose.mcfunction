@@ -5,7 +5,7 @@
 data merge storage ani_out {data:{Pose:{Head:[0f,0f,0f], Body:[0f,0f,0f], LeftArm:[0f,0f,0f], RightArm:[0f,0f,0f], LeftLeg:[0f,0f,0f], RightLeg:[0f,0f,0f]}}}
 
 # store Rotation
-execute store result storage ani_out data.Pose.Rotation float 1 run scoreboard players get @s ani_rot_s
+execute store result storage ani_out data.Pose.Rotation int 1 run scoreboard players get @s ani_rot_s
 
 # store Pose and Speed
 execute store result storage ani_out data.Pose.Head[0] float 1 run scoreboard players get @s ani_head_x_s

@@ -9,8 +9,7 @@ scoreboard players remove #pre ani_ram 1
 
 # only increase if lower then total amount
 execute if score #pre ani_ram <= @e[tag=ani_sel_as,limit=1] ani_keyam run scoreboard players operation @e[tag=ani_sel_as] ani_selkey += @s ani_if_summand
-execute if score #pre ani_ram < @e[tag=ani_sel_as,limit=1] ani_keyam as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/load_keyframe
-execute if score #pre ani_ram = @e[tag=ani_sel_as,limit=1] ani_keyam as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/util/prepare_new_keyframe
+execute if score #pre ani_ram <= @e[tag=ani_sel_as,limit=1] ani_keyam as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/load_keyframe
 
 # Clear
 scoreboard players reset #pre ani_ram

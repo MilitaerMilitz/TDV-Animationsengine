@@ -4,7 +4,10 @@ execute as @e[tag=ani_body] at @s unless entity @e[tag=ani_act,scores={ani_vtout
 execute as @e[tag=ani_head] at @s unless entity @e[tag=ani_act,scores={ani_vtout=0..}] unless entity @e[tag=ani_act,distance=..3] run kill @s
 
 # check for sth. to animate
-execute as @e[tag=ani_act,type=armor_stand] at @s run function anieng:main/mainloop
+execute as @e[tag=ani_act,tag=!ani_pause,type=armor_stand] at @s run function anieng:main/mainloop
+
+# glowing of selected Armorstands
+execute as @e[tag=ani_glow,type=armor_stand] run effect give @s glowing 1 1 true
 
 # check if pose view is visible and show it if so
 execute as @a[scores={ani_ram=1}] at @s run function anieng:interface/pv/pose_view

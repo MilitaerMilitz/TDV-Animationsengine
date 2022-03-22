@@ -19,6 +19,5 @@ scoreboard players set @s ani_vtout 20
 
 # clear
 data remove storage ani_ram data
-tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_body] remove ani_sel_body
 tag @e[tag=ani_sel_head] remove ani_sel_head

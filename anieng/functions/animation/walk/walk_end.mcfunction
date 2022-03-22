@@ -20,5 +20,7 @@ tag @s remove ani_walk_pos
 tag @s remove ani_walk_narm
 tag @s remove ani_walk_end
 tag @s remove ani_walk_stop
+tag @s remove ani_walk_nmod
+tag @s remove ani_walk_back
+tag @s remove ani_walk_ntep
 tag @s remove ani_time_walk
-tag @s remove ani_walk_ntp
