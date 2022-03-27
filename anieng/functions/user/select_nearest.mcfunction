@@ -10,7 +10,7 @@ execute store result score @s ani_if_sel_u3 run data get entity @e[tag=ani_act,s
 
 execute as @e[tag=ani_act,sort=nearest,limit=1] run effect give @s glowing 1 1 true
 
-execute as @e[tag=ani_sel_as,sort=nearest,limit=1] unless score @s ani_action matches 1.. run scoreboard players set @s ani_action 2
-execute if score @e[tag=ani_sel_as,sort=nearest,limit=1] ani_action matches 3.. run scoreboard players operation @s ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_action
+execute as @e[tag=ani_sel_as,sort=nearest,limit=1] unless score @s ani_action matches 1.. run scoreboard players set @s ani_action 300
+execute if score @e[tag=ani_sel_as,sort=nearest,limit=1] ani_action matches 300.. run scoreboard players operation @s ani_ram = @e[tag=ani_sel_as,sort=nearest,limit=1] ani_action
 
 tag @e[tag=ani_sel_as] remove ani_sel_as

@@ -3,9 +3,10 @@
 
 # Read Action
 execute store result score #action ani_ram run data get entity @s data.Keyframes[0].Action.id
+execute unless score #action ani_ram matches 0.. run scoreboard players set #action ani_ram 0
 
 # Enew = Snew + Told;
-execute if score #action ani_ram matches 5 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_tmw
+execute if score #action ani_ram matches 311 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_tmw
 execute if score #action ani_ram matches 0 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_standard
 
 # clear

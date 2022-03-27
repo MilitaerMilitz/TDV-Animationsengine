@@ -4,8 +4,8 @@
 
 # payload, refresh shown gui page
 function anieng:util/find_as
-scoreboard players set @e[tag=ani_sel_as] ani_action 5
-scoreboard players set @s ani_ram 5
+scoreboard players set @e[tag=ani_sel_as] ani_action 311
+scoreboard players set @s ani_ram 311
 execute as @e[tag=ani_sel_as] at @s run function anieng:util/find_data
 
 # construct Action

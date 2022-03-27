@@ -6,4 +6,4 @@ execute as @e[tag=ani_sel_as] at @s run function anieng:util/find_tiles_from_act
 
 function anieng:util/sel_kill
 
-scoreboard players set @s ani_ram 1
+scoreboard players set @s ani_ram 400

@@ -15,10 +15,10 @@ execute store result score @e[tag=ani_tmp,limit=1] ani_rot run data get entity @
 scoreboard players operation @e[tag=ani_tmp,limit=1] ani_rot_s = #rot_s ani_ram
 scoreboard players operation @e[tag=ani_tmp,limit=1] ani_rot_speed = #rot_speed ani_ram
 
-# while (#tit > 0): {
+# while (#tit > 0)
 execute if score #tit ani_ram matches 1.. as @e[tag=ani_tmp,limit=1] at @s run function anieng:animation/walk/tmw_simulation/simulate_time_walk_rek
 
-# while (ani_rot =! ani_rot_s): {
+# while (ani_rot =! ani_rot_s)
 execute as @e[tag=ani_tmp,limit=1] at @s unless score @s ani_rot = @s ani_rot_s run function anieng:animation/walk/tmw_simulation/simulate_time_walk_rek2
 
 # return EndData = StartData.Pos(...).Rotation(...)

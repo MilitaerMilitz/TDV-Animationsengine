@@ -31,11 +31,11 @@ scoreboard objectives add ani_arwalk_rot dummy
 scoreboard objectives add ani_arwalk_prot dummy
 
 # Keyframe interface
-scoreboard objectives add ani_keyam dummy
-scoreboard objectives add ani_pkeyam dummy
-
 scoreboard objectives add ani_selkey dummy
 scoreboard objectives add ani_pselkey dummy
+
+scoreboard objectives add ani_keyam dummy
+scoreboard objectives add ani_pkeyam dummy
 
 # Trigger External Engine data
 scoreboard objectives add ani_tee_x dummy

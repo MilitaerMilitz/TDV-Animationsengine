@@ -2,7 +2,7 @@
 # do: Resets Situation to begin of Keyframe.
 # return: void
 
-# Relocate Armorstand with components into user specific Pose
+# Relocate Armorstand with components into use it.r specific Pose
 execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:util/find_tiles_from_act
 
 data modify entity @e[tag=ani_sel_as,limit=1] Pos set from entity @s data.StartData.Pos

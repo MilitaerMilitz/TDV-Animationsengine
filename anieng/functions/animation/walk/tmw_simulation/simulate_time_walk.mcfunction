@@ -7,13 +7,12 @@
 # post: ani_out data.EndData is defined
 # return: ani_out data.EndData
 
-# if (ntep): {
-#   return StartData
+# if (ntep) return StartData;
 execute store result score #ntep ani_ram run data get storage ani_in data.Action.ntep
-execute if score #ntep ani_ram matches 1 run data modify storage ani_out data.EndData set from storage ani_in data.StartData
+execute if score #ntep ani_ram matches 0 run data modify storage ani_out data.EndData set from storage ani_in data.StartData
 
-# else: {
-execute if score #ntep ani_ram matches 0 run function anieng:animation/walk/tmw_simulation/simulate_time_walk_2
+# else 
+execute if score #ntep ani_ram matches 1 run function anieng:animation/walk/tmw_simulation/simulate_time_walk_2
 
 # clear
 data remove storage ani_in data

@@ -59,12 +59,13 @@ execute if entity @s[tag=ani_align_walk_init] run function anieng:animation/walk
 execute if entity @s[tag=ani_align_walk] run function anieng:animation/walk/align_walk/align_walk
 execute if entity @s[tag=ani_align_walk_end] run function anieng:animation/walk/align_walk/align_walk_end
 
+# ani_play
+execute if entity @s[tag=ani_play,scores={ani_run=0}] unless score @s ani_selkey <= @s ani_keyam run function anieng:play/play_end
+execute if entity @s[tag=ani_play] if score @s ani_selkey <= @s ani_keyam run function anieng:play/check_and_play
+execute if entity @s[tag=ani_play,tag=ani_play_one] run function anieng:play/play_end
+
 # head/body
 function anieng:main/tile_loop
-
-# ani_play
-execute if entity @s[tag=ani_play,scores={ani_run=0}] if score @s ani_selkey = @s ani_keyam run function anieng:play/play_end
-execute if entity @s[tag=ani_play] if score @s ani_selkey < @s ani_keyam run function anieng:play/check_and_play
 
 # Clear
 tag @s remove ani_sel_as

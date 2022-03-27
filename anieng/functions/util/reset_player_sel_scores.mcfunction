@@ -32,3 +32,16 @@ scoreboard players reset @s ani_phdbo_speed
 scoreboard players reset @s ani_parm_speed
 scoreboard players reset @s ani_pleg_speed
 scoreboard players reset @s ani_prot_speed
+
+# player selected action
+scoreboard players reset @s ani_walk_pnarm
+scoreboard players reset @s ani_walk_ptbw
+scoreboard players reset @s ani_walk_pntep
+scoreboard players reset @s ani_arwalk_prot
+scoreboard players reset @s ani_pselkey
+scoreboard players reset @s ani_pkeyam
+
+# Tee
+scoreboard players reset @s ani_ptee_x
+scoreboard players reset @s ani_ptee_y
+scoreboard players reset @s ani_ptee_z

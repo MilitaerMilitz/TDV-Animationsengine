@@ -4,8 +4,8 @@
 
 # payload, refresh shown gui page
 function anieng:util/find_as
-scoreboard players set @e[tag=ani_sel_as] ani_action 4
-scoreboard players set @s ani_ram 4
+scoreboard players set @e[tag=ani_sel_as] ani_action 310
+scoreboard players set @s ani_ram 310
 execute as @e[tag=ani_sel_as] at @s run function anieng:util/find_data
 
 # reset Time in Tiks

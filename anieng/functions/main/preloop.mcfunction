@@ -14,29 +14,37 @@ execute as @e[tag=ani_glow,type=armor_stand] run effect give @s glowing 1 1 true
 execute as @a[scores={ani_ram=1..}] at @s run setblock ~ -64 ~ oak_sign 
 
 
-# check if pose view is visible and show it if so
-execute as @a[scores={ani_ram=1}] at @s run function anieng:interface/pv/pose_view
-execute as @a[scores={ani_ram=2}] at @s run function anieng:interface/av/action_view
-execute as @a[scores={ani_ram=3}] at @s run function anieng:interface/kfv/keyframe_view
+# Armorstand view
+execute as @a[scores={ani_ram=100}] at @s run function anieng:interface/arm/armorstand_setings_view
 
+# Pose View
+execute as @a[scores={ani_ram=200}] at @s run function anieng:interface/pv/pose_view
+
+# Action View
+execute as @a[scores={ani_ram=300}] at @s run function anieng:interface/av/action_view
 
 # Time Walk
-execute as @a[scores={ani_ram=4}] at @s run function anieng:interface/av/tmw/action_tmw_view
-execute as @a[scores={ani_ram=5}] at @s run function anieng:interface/av/tmw/action_tmw_saved
+execute as @a[scores={ani_ram=310}] at @s run function anieng:interface/av/tmw/action_tmw_view
+execute as @a[scores={ani_ram=311}] at @s run function anieng:interface/av/tmw/action_tmw_saved
 
-execute as @a[scores={ani_ram=210}] at @s run function anieng:interface/av/tmw/action_tmw_view
+# Trader Walk
+execute as @a[scores={ani_ram=320}] at @s run function anieng:interface/av/trw/action_trw_view
+execute as @a[scores={ani_ram=321}] at @s run function anieng:interface/av/trw/action_trw_saved
 
-# 6 -> align_walk_view
-# 7 -> align_walk_saved
-execute as @a[scores={ani_ram=220}] at @s run function anieng:interface/av/tmw/action_tmw_view
+# Align Walk
+execute as @a[scores={ani_ram=330}] at @s run function anieng:interface/av/aw/action_aw_view
+execute as @a[scores={ani_ram=331}] at @s run function anieng:interface/av/aw/action_aw_saved
 
-# 10 -> trader_walk_view
-# 11 -> trader_walk_saved
-execute as @a[scores={ani_ram=230}] at @s run function anieng:interface/av/tmw/action_tmw_view
+# Rot Walk
+execute as @a[scores={ani_ram=340}] at @s run function anieng:interface/av/rw/action_rw_view
+execute as @a[scores={ani_ram=341}] at @s run function anieng:interface/av/rw/action_rw_saved
 
-# 8 -> rot_walk_view
-# 9 -> rot_walk_saved
-execute as @a[scores={ani_ram=240}] at @s run function anieng:interface/av/tmw/action_tmw_view
+# Keyframe view
+execute as @a[scores={ani_ram=400}] at @s run function anieng:interface/kfv/keyframe_view
+
+# Deactivated keyframe view
+execute as @a[scores={ani_ram=401}] at @s run function anieng:interface/kfv/keyframe_deactive
+
 
 #UI corekt
 execute as @a[scores={ani_ram=1..}] at @s run setblock ~ -64 ~ bedrock

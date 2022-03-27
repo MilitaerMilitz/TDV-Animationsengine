@@ -12,6 +12,7 @@ execute as @e[tag=ani_sel_as,limit=1] run function anieng:keyframe/util/load_sna
 data modify storage ani_in data.StartData set from entity @s data.Keyframes[0].StartData
 data modify storage ani_in data.Action set from entity @s data.Keyframes[0].Action
 execute store result score #rot_s ani_ram run data get entity @s data.Keyframes[0].EndData.Pose.Rotation
+
 execute store result score #rot_speed ani_ram run data get entity @s data.Keyframes[0].EndData.Pose.Speed.Rotation
 
 execute as @e[tag=ani_sel_as,limit=1] run function anieng:animation/walk/tmw_simulation/simulate_time_walk
@@ -21,6 +22,10 @@ execute as @e[tag=ani_sel_as,limit=1] run function anieng:keyframe/util/load_sna
 
 data modify entity @s data.Keyframes[0].EndData set from storage ani_out data.EndData
 
+# [Debug NBT Data]
+tellraw @p {"nbt":"data.Keyframes[0].EndData.Pose","entity":"@s"}
+
 
 # clear
 data remove storage ani_ram3 data
+data remove storage ani_out data
