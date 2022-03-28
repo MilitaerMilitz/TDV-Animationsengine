@@ -10,5 +10,5 @@ scoreboard players operation @s ani_rot = #value ani_ram
 # Rotation = #value
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #value ani_ram
 
-# clear
+# clear()
 scoreboard players reset #value ani_ram

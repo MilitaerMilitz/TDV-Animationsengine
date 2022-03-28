@@ -16,6 +16,6 @@ data remove storage ani_out data
 # execute action
 execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:interface/av/util/save_general
 
-# clear
+# clear()
 tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_as] remove ani_sel_as

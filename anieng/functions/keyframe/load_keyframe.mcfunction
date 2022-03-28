@@ -23,6 +23,6 @@ execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/lo
 # if last selected clear Ram to prepare creating new keyframe
 execute if score #inkam ani_ram = #preselkey ani_ram run function anieng:keyframe/util/prepare_new_keyframe
 
-# clear
+# clear()
 scoreboard players reset #inkam ani_ram
 scoreboard players reset #preselkey ani_ram

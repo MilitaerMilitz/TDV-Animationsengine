@@ -14,7 +14,7 @@ execute if score #ntep ani_ram matches 0 run data modify storage ani_out data.En
 # else 
 execute if score #ntep ani_ram matches 1 run function anieng:animation/walk/tmw_simulation/simulate_time_walk_2
 
-# clear
+# clear()
 data remove storage ani_in data
 scoreboard players reset #rot_s ani_ram
 scoreboard players reset #rot_speed ani_ram

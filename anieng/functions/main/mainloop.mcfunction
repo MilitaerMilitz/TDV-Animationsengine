@@ -67,7 +67,7 @@ execute if entity @s[tag=ani_play,tag=ani_play_one] run function anieng:play/pla
 # head/body
 function anieng:main/tile_loop
 
-# Clear
+# clear()
 tag @s remove ani_sel_as
 tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_body] remove ani_sel_body

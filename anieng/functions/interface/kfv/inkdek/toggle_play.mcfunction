@@ -12,5 +12,5 @@ execute as @e[tag=ani_sel_as] if entity @s[tag=!ani_pause] if score #pre ani_ram
 execute as @e[tag=ani_sel_as] if entity @s[tag=!ani_pause] if score #pre ani_ram matches 1 run tag @s remove ani_play
 execute as @e[tag=ani_sel_as] if entity @s[tag=ani_pause] if score #pre ani_ram matches 1 run tag @s remove ani_pause
 
-# clear
+# clear()
 scoreboard players reset #pre ani_ram

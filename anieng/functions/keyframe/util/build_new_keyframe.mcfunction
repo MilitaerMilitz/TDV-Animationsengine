@@ -29,5 +29,5 @@ data remove storage ani_out data
 data modify storage ani_out data set from storage ani_ram2 data 
 data remove storage ani_ram2 data
 
-# clear
+# clear()
 data remove storage ani_ram2 data

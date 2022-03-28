@@ -13,5 +13,5 @@ execute unless data entity @s Pose.Body run data merge entity @s {Pose:{Body:[1f
 # Pose.Body.X = #value
 execute store result entity @s Pose.Body[0] float 1 run scoreboard players get #value ani_ram
 
-# clear
+# clear()
 scoreboard players reset #value ani_ram

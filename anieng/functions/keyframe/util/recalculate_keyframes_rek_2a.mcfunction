@@ -7,5 +7,5 @@ data modify storage ani_in data.EndData set from entity @s data.Keyframes[0].End
 function anieng:keyframe/util/create_transition
 data modify entity @s data.Keyframes[0].Transition set from storage ani_out data.Transition
 
-# clear
+# clear()
 data remove storage ani_out data

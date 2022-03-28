@@ -14,7 +14,7 @@ execute if score #create ani_ram matches 1 as @e[tag=ani_sel_as] at @s run funct
 # save keyframe
 execute if score #create ani_ram matches 0 as @e[tag=ani_sel_data] at @s run function anieng:interface/kfv/save
 
-# clear
+# clear()
 scoreboard players reset #inkam ani_ram
 scoreboard players reset #create ani_ram
 scoreboard players reset #saved ani_ram

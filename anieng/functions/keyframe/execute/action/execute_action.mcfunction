@@ -18,7 +18,7 @@ execute if score #action ani_ram matches 311 run function anieng:keyframe/execut
 # if (action.tee) executeTee()
 execute if data entity @e[tag=ani_sel_data,limit=1] data.Tee run function anieng:keyframe/execute/action/execute_tee
 
-## clear
+## clear()
 scoreboard players reset #action ani_ram
 
 # if (dataExists) removeData(); dataExists = null;

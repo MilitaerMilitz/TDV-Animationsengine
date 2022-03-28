@@ -10,7 +10,7 @@ execute if data entity @s {Inventory:[{Slot:100b}]} run item replace entity @e[t
 item replace entity @e[tag=ani_sel_head,limit=1] weapon.mainhand from entity @s weapon.mainhand
 item replace entity @e[tag=ani_sel_head,limit=1] weapon.offhand from entity @s weapon.offhand
 
-# clear 
+# clear() 
 tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_head] remove ani_sel_head
 tag @e[tag=ani_sel_body] remove ani_sel_body

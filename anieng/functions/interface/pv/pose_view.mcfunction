@@ -67,7 +67,7 @@ scoreboard players operation @s ani_pselkey = @e[tag=ani_sel_as,sort=nearest,lim
 
 
 
-# clear
+# clear()
 tag @e[tag=ani_sel_as] remove ani_sel_as
 
 # gui

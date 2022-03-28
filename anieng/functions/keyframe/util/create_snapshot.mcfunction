@@ -13,5 +13,5 @@ data remove storage ani_out data.Pose
 data modify storage ani_out data.Snap.Pose set from storage ani_ram data.Pose
 data modify storage ani_out data.Snap.Pos set from entity @s Pos
 
-# clear
+# clear()
 data remove storage ani_ram data

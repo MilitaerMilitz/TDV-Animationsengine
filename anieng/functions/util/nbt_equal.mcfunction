@@ -11,6 +11,6 @@ execute store success score #equal ani_ram run data modify storage ani_ram data.
 scoreboard players add #equal ani_ram 1
 scoreboard players operation #equal ani_ram %= 2 numbers
 
-# clear
+# clear()
 data remove storage ani_ram data
 data remove storage ani_in data

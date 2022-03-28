@@ -18,5 +18,5 @@ function anieng:keyframe/util/build_new_keyframe
 execute as @e[tag=ani_sel_data,limit=1] at @s run data modify entity @s data.Keyframes set value []
 execute as @e[tag=ani_sel_data,limit=1] at @s run data modify entity @s data.Keyframes append from storage ani_out data
 
-# clear
+# clear()
 data remove storage ani_out data

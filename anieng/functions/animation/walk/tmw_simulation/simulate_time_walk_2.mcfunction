@@ -26,7 +26,7 @@ data modify storage ani_out data.EndData set from storage ani_in data.StartData
 data modify storage ani_out data.EndData.Pos set from entity @e[tag=ani_tmp,limit=1] Pos
 execute store result storage ani_out data.EndData.Pose.Rotation int 1 run data get entity @e[tag=ani_tmp,limit=1] Rotation[0]
 
-# clear
+# clear()
 scoreboard players reset #tbw ani_ram
 scoreboard players reset #tit ani_ram
 kill @e[tag=ani_tmp]

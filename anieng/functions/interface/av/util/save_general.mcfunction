@@ -16,7 +16,7 @@ data modify storage ani_in data.Pose set from storage ani_out data.Pose
 function anieng:keyframe/util/load_pose_animate
 function anieng:keyframe/execute/action/execute_action
 
-# clear
+# clear()
 data remove storage ani_out data
 
 # call as ani_data marker
@@ -31,6 +31,6 @@ data remove storage ani_out data
 #data modify storage ani_in data.Pose set from storage ani_out data.Pose
 #execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:keyframe/util/load_pose_animate
 
-# clear
+# clear()
 #scoreboard players reset #teeBool ani_ram
 #data remove storage ani_out data

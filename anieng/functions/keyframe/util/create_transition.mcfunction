@@ -143,7 +143,7 @@ execute store result score #end ani_ram run data get storage ani_in data.EndData
 scoreboard players operation #end ani_ram -= #start ani_ram
 execute store result storage ani_out data.Transition.Pos[2] double 0.000001 run scoreboard players get #end ani_ram
 
-# clear
+# clear()
 scoreboard players reset #end ani_ram
 scoreboard players reset #start ani_ram
 data remove storage ani_in data

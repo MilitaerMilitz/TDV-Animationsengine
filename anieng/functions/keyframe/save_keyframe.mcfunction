@@ -21,5 +21,5 @@ data modify storage ani_in data.nbt2 set from entity @s data.Keyframes[0].EndDat
 function anieng:util/nbt_equal
 execute if score #equal ani_ram matches 0 as @e[tag=ani_sel_as,limit=1] run function anieng:keyframe/util/recalculate_keyframes
 
-# clear
+# clear()
 scoreboard players reset #equal ani_ram

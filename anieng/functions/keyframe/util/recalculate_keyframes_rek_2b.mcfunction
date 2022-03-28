@@ -9,7 +9,7 @@ execute unless score #action ani_ram matches 0.. run scoreboard players set #act
 execute if score #action ani_ram matches 311 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_tmw
 execute if score #action ani_ram matches 0 run function anieng:keyframe/util/recalculate_keyframes_rek_mod_standard
 
-# clear
+# clear()
 data remove storage ani_out data
 
 # rekursion call -> propagate;

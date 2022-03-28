@@ -9,5 +9,5 @@ function anieng:keyframe/util/check_keyframe_running
 # if (keyframe running) play(); loadNext();
 execute if score #free ani_ram matches 1 run function anieng:play/play_and_prepare_next
 
-# clear
+# clear()
 scoreboard players reset #free ani_ram

@@ -6,6 +6,6 @@ scoreboard players operation #pre ani_ram = @e[tag=ani_sel_as,limit=1] ani_walk_
 execute if score #pre ani_ram matches 0 run scoreboard players set @e[tag=ani_sel_as,limit=1] ani_walk_ntep 1
 execute if score #pre ani_ram matches 1 run scoreboard players set @e[tag=ani_sel_as,limit=1] ani_walk_ntep 0
 
-# clear
+# clear()
 scoreboard players reset #pre ani_ram
 tag @e[tag=ani_sel_as] remove ani_sel_as

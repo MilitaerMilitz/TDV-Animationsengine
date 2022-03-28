@@ -26,6 +26,6 @@ data modify entity @s data.Keyframes[0].EndData set from storage ani_out data.En
 tellraw @p {"nbt":"data.Keyframes[0].EndData.Pose","entity":"@s"}
 
 
-# clear
+# clear()
 data remove storage ani_ram3 data
 data remove storage ani_out data

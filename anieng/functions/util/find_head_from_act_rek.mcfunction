@@ -13,7 +13,7 @@ execute unless score #tuuid1 ani_ram = #auuid1 ani_ram run tag @s remove ani_sel
 execute unless score #tuuid2 ani_ram = #auuid2 ani_ram run tag @s remove ani_sel_head
 execute unless score #tuuid3 ani_ram = #auuid3 ani_ram run tag @s remove ani_sel_head
 
-# Clear Ram
+# clear() Ram
 scoreboard players reset #tuuid0 ani_ram
 scoreboard players reset #tuuid1 ani_ram
 scoreboard players reset #tuuid2 ani_ram

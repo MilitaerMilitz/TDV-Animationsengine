@@ -32,7 +32,7 @@ execute if entity @s[tag=ani_body] store result storage ani_in data.Pose.Head[0]
 execute if entity @s[tag=ani_body] store result storage ani_in data.Pose.Head[1] float 1 run scoreboard players get @e[tag=ani_sel_act,limit=1] ani_body_y_s
 execute if entity @s[tag=ani_body] store result storage ani_in data.Pose.Head[2] float 1 run scoreboard players get @e[tag=ani_sel_act,limit=1] ani_body_z_s
 
-# Clear
+# clear()
 tag @e[tag=ani_sel_act] remove ani_sel_act
 tag @e[tag=ani_sel_body] remove ani_sel_body
 tag @e[tag=ani_sel_head] remove ani_sel_head

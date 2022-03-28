@@ -17,7 +17,7 @@ function anieng:main/tile_loop
 # [debug] set cooldown for existence checking between Armorstand and data marker
 scoreboard players set @s ani_vtout 20
 
-# clear
+# clear()
 data remove storage ani_ram data
 tag @e[tag=ani_sel_body] remove ani_sel_body
 tag @e[tag=ani_sel_head] remove ani_sel_head

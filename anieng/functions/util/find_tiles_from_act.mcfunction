@@ -1,6 +1,6 @@
 # Call function as animation Armorstand
 # After this function right Armorstands will have tag ani_sel_body, ani_sel_head, ani_sel_data
-# Clears Ram automatically
+# clear()s Ram automatically
 
 execute store result score #auuid0 ani_ram run data get entity @s Passengers[0].data.BodyUUID[0]
 execute store result score #auuid1 ani_ram run data get entity @s Passengers[0].data.BodyUUID[1]
@@ -23,7 +23,7 @@ execute store result score #auuid3 ani_ram run data get entity @s Passengers[0].
 
 execute unless entity @e[tag=ani_sel_data] as @e[tag=ani_data,type=marker,sort=nearest,distance=..3] at @s run function anieng:util/find_data_rek
 
-# Clear Ram
+# clear() Ram
 scoreboard players reset #auuid0 ani_ram
 scoreboard players reset #auuid1 ani_ram
 scoreboard players reset #auuid2 ani_ram

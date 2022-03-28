@@ -11,6 +11,6 @@ execute store result entity @e[tag=ani_sel_data,limit=1] data.Tee[0] int 1 run s
 execute store result entity @e[tag=ani_sel_data,limit=1] data.Tee[1] int 1 run scoreboard players get @e[tag=ani_sel_as,limit=1] ani_tee_y
 execute store result entity @e[tag=ani_sel_data,limit=1] data.Tee[2] int 1 run scoreboard players get @e[tag=ani_sel_as,limit=1] ani_tee_z
 
-# clear
+# clear()
 tag @e[tag=ani_sel_as] remove ani_sel_as
 tag @e[tag=ani_sel_data] remove ani_sel_data

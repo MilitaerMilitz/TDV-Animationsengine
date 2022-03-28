@@ -15,7 +15,7 @@ execute as @e[tag=ani_sel_as,limit=1] at @s run function anieng:main/tile_loop
 # [debug] set cooldown for existence checking between Armorstand and components
 scoreboard players set @e[tag=ani_sel_as] ani_vtout 20
 
-# clear
+# clear()
 data remove entity @s data.Ram.Pose
 data modify entity @s data.Action set value {}
 tag @e[tag=ani_sel_body] remove ani_sel_body

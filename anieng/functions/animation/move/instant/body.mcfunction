@@ -23,5 +23,5 @@ execute store result storage ani_ram data[1] float 1 run scoreboard players get 
 execute store result storage ani_ram data[2] float 1 run scoreboard players get #z ani_ram
 data modify entity @s Pose.Body set from storage ani_ram data
 
-# clear
+# clear()
 data remove storage ani_ram data

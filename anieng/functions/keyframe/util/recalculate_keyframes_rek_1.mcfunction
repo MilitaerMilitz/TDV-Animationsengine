@@ -20,6 +20,6 @@ execute if score #static ani_ram matches 1 run function anieng:keyframe/util/rec
 # rekursion call -> propagate;
 execute if score #static ani_ram matches 0 run function anieng:keyframe/util/recalculate_keyframes_rek_2b
 
-# clear
+# clear()
 scoreboard players reset #static ani_ram
 

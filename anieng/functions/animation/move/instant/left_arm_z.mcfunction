@@ -13,5 +13,5 @@ execute unless data entity @s Pose.LeftArm run data merge entity @s {Pose:{LeftA
 # Pose.LeftArm.Z = #value
 execute store result entity @s Pose.LeftArm[2] float 1 run scoreboard players get #value ani_ram
 
-# clear
+# clear()
 scoreboard players reset #value ani_ram

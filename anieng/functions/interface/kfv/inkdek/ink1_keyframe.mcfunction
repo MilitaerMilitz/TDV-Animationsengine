@@ -10,7 +10,7 @@ execute if score #pre ani_ram <= @e[tag=ani_sel_as,limit=1] ani_keyam run scoreb
 execute if score #pre ani_ram < @e[tag=ani_sel_as,limit=1] ani_keyam as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/load_keyframe
 execute if score #pre ani_ram = @e[tag=ani_sel_as,limit=1] ani_keyam as @e[tag=ani_sel_data,limit=1] at @s run function anieng:keyframe/util/prepare_new_keyframe
 
-# Clear
+# clear()
 scoreboard players reset #pre ani_ram
 tag @e[tag=ani_sel_as] remove ani_sel_as
 tag @e[tag=ani_sel_data] remove ani_sel_data

@@ -61,5 +61,5 @@ execute store result score @s ani_hdbo_speed run data get storage ani_in data.Po
 execute store result score @s ani_arm_speed run data get storage ani_in data.Pose.Speed.Arm
 execute store result score @s ani_leg_speed run data get storage ani_in data.Pose.Speed.Leg
 
-# clear
+# clear()
 data remove storage ani_in data
