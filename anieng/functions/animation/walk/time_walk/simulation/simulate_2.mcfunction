@@ -16,10 +16,10 @@ scoreboard players operation @e[tag=ani_tmp,limit=1] ani_rot_s = #rot_s ani_ram
 scoreboard players operation @e[tag=ani_tmp,limit=1] ani_rot_speed = #rot_speed ani_ram
 
 # while (#tit > 0)
-execute if score #tit ani_ram matches 1.. as @e[tag=ani_tmp,limit=1] at @s run function anieng:animation/walk/tmw_simulation/simulate_time_walk_rek
+execute if score #tit ani_ram matches 1.. as @e[tag=ani_tmp,limit=1] at @s run function anieng:animation/walk/time_walk/simulation/simulate_rek
 
 # while (ani_rot =! ani_rot_s)
-execute as @e[tag=ani_tmp,limit=1] at @s unless score @s ani_rot = @s ani_rot_s run function anieng:animation/walk/tmw_simulation/simulate_time_walk_rek2
+execute as @e[tag=ani_tmp,limit=1] at @s unless score @s ani_rot = @s ani_rot_s run function anieng:animation/walk/time_walk/simulation/simulate_rek2
 
 # return EndData = StartData.Pos(...).Rotation(...)
 data modify storage ani_out data.EndData set from storage ani_in data.StartData

@@ -25,7 +25,7 @@ execute store result score #rot_speed ani_ram run data get entity @e[tag=ani_sel
 # [Debug NBT Data]
 #tellraw @p {"nbt":"data.Action","storage":"ani_in"}
 
-execute as @e[tag=ani_sel_as] at @s run function anieng:animation/walk/tmw_simulation/simulate_time_walk
+execute as @e[tag=ani_sel_as] at @s run function anieng:animation/walk/time_walk/simulation/simulate
 
 # [Debug NBT Data]
 tellraw @p {"nbt":"data","storage":"ani_out"}

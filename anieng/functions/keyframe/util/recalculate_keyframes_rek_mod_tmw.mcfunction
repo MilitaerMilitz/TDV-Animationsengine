@@ -15,7 +15,7 @@ execute store result score #rot_s ani_ram run data get entity @s data.Keyframes[
 
 execute store result score #rot_speed ani_ram run data get entity @s data.Keyframes[0].EndData.Pose.Speed.Rotation
 
-execute as @e[tag=ani_sel_as,limit=1] run function anieng:animation/walk/tmw_simulation/simulate_time_walk
+execute as @e[tag=ani_sel_as,limit=1] run function anieng:animation/walk/time_walk/simulation/simulate
 
 data modify storage ani_in data.Snap set from storage ani_ram3 data.Snap
 execute as @e[tag=ani_sel_as,limit=1] run function anieng:keyframe/util/load_snapshot

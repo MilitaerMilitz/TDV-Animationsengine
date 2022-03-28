@@ -12,7 +12,7 @@ scoreboard players set @s ani_run 1
 execute unless score @s ani_walk_speed matches 0..6 run scoreboard players set @s ani_walk_speed 1
 
 # initialize arms
-execute unless entity @s[tag=ani_walk_narm] run function anieng:animation/walk/walk_init_arm
+execute unless entity @s[tag=ani_walk_narm] run function anieng:animation/walk/api/arm/set_init_position
 
 # initialize legs
 scoreboard players operation @s ani_leg_speed = @s ani_walk_speed

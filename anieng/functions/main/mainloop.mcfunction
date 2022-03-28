@@ -42,9 +42,9 @@ execute unless score @s ani_rigt_leg_y_s = @s ani_right_leg_y run function anien
 execute unless score @s ani_rigt_leg_z_s = @s ani_right_leg_z run function anieng:animation/move/right_leg_z
 
 # walk engine
-execute if entity @s[tag=ani_walk_init] run function anieng:animation/walk/walk_init
-execute if entity @s[tag=ani_walk,tag=!ani_walk_stop] run function anieng:animation/walk/walk
-execute if entity @s[tag=ani_walk_end] run function anieng:animation/walk/walk_end
+execute if entity @s[tag=ani_walk_init] run function anieng:animation/walk/main/init
+execute if entity @s[tag=ani_walk,tag=!ani_walk_stop] run function anieng:animation/walk/main/walk
+execute if entity @s[tag=ani_walk_end] run function anieng:animation/walk/main/end
 
 execute if entity @s[tag=ani_trader_walk,tag=ani_trader_walk_init] run tag @s remove ani_trader_walk_init
 execute if entity @s[tag=ani_trader_walk_init] run function anieng:animation/walk/trader_walk/trader_walk_init
@@ -52,12 +52,12 @@ execute if entity @s[tag=ani_trader_walk] run function anieng:animation/walk/tra
 execute if entity @s[tag=ani_trader_walk_end] run function anieng:animation/walk/trader_walk/trader_walk_end
 execute as @e[type=wandering_trader,tag=ani_trader] at @s run function anieng:animation/walk/trader_walk/trader_loop
 
-execute if entity @s[tag=ani_rot_walk_init] run function anieng:animation/walk/align_walk/rot_walk_init
+execute if entity @s[tag=ani_rot_walk_init] run function anieng:animation/walk/rot_walk/init
 execute if entity @s[tag=ani_rot_walk_rot] if score @s ani_rot = @s ani_rot_s run tag @s add ani_align_walk
 
 execute if entity @s[tag=ani_align_walk_init] run function anieng:animation/walk/align_walk/align_walk
 execute if entity @s[tag=ani_align_walk] run function anieng:animation/walk/align_walk/align_walk
-execute if entity @s[tag=ani_align_walk_end] run function anieng:animation/walk/align_walk/align_walk_end
+execute if entity @s[tag=ani_align_walk_end] run function anieng:animation/walk/align_walk/end
 
 # ani_play
 execute if entity @s[tag=ani_play,scores={ani_run=0}] unless score @s ani_selkey <= @s ani_keyam run function anieng:play/play_end
