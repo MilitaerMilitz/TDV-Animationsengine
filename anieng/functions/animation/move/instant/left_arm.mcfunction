@@ -1,6 +1,7 @@
 # @s: ani_act
 # pre: storage ani_ram is empty
 # input: #x, #y, #z
+# manipulates: Pose.LeftArm
 # do: Set armorstand tile x, y, z to #x, #y, #z
 # return: void
 

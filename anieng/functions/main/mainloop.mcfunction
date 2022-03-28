@@ -43,7 +43,7 @@ execute unless score @s ani_rigt_leg_z_s = @s ani_right_leg_z run function anien
 
 # walk engine
 execute if entity @s[tag=ani_walk_init] run function anieng:animation/walk/main/init
-execute if entity @s[tag=ani_walk,tag=!ani_walk_stop] run function anieng:animation/walk/main/walk
+execute if entity @s[tag=ani_walk,tag=!ani_walk_abort] run function anieng:animation/walk/main/walk
 execute if entity @s[tag=ani_walk_end] run function anieng:animation/walk/main/end
 
 execute if entity @s[tag=ani_trader_walk,tag=ani_trader_walk_init] run tag @s remove ani_trader_walk_init

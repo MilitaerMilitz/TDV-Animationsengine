@@ -16,7 +16,7 @@ execute as @e[tag=ani_sel_data,limit=1] at @s run function anieng:interface/av/u
 
 # clear()
 tag @e[tag=ani_sel_as,tag=ani_walk] add ani_walk_end
-tag @e[tag=ani_sel_as,tag=ani_walk] add ani_walk_stop
+tag @e[tag=ani_sel_as,tag=ani_walk] add ani_walk_abort
 tag @e[tag=ani_sel_as,tag=ani_walk] remove ani_walk_back
 tag @e[tag=ani_sel_data] remove ani_sel_data
 tag @e[tag=ani_sel_as] remove ani_sel_as

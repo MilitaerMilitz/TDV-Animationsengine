@@ -1,5 +1,8 @@
 # @s: ani_act
-# uses: manipulates @s ani_time_walk, manipulates Pose.RightLeg.X
+# manipulates: Pos if tag=!ani_walk_ntep
+# manipulates: @s ani_time_walk if tag=ani_time_walk
+# manipulates: Pose.Legs
+# manipulates: Pose.Arms if tag=!ani_walk_narm
 # do: Executes walk by animate walk and teleport @s
 # return: void
 
@@ -20,7 +23,7 @@ scoreboard players operation @s ani_right_leg_x = @s ani_rigt_leg_x_s
 execute store result entity @s Pose.RightLeg[0] float 1 run scoreboard players get @s ani_right_leg_x
 
 # if (narm) animateArms()
-execute unless entity @s[tag=ani_walk_narm] run function anieng:animation/walk/api/arm/animate
+execute unless entity @s[tag=ani_walk_narm] run function anieng:animation/walk/api/arm/bind_to_legs
 
 # if (tag == time_walk) timeWalkTick()
 execute if entity @s[tag=ani_time_walk] run function anieng:animation/walk/time_walk/tick

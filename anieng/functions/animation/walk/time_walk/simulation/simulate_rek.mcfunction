@@ -5,9 +5,9 @@
 function anieng:animation/move/rotate
 
 # if (tbw):
-#   walk_pos()
+#  walk_pos()
 # else:
-#   walk_neg()
+#  walk_neg()
 execute if score #tbw ani_ram matches 1 run tag @s add ani_walk_back
 function anieng:animation/walk/api/pos/walk
 

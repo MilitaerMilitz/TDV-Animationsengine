@@ -1,5 +1,6 @@
 # @s: ani_act
-# uses: @s ani_ram, manipulates Rotation[0]
+# uses: @s ani_ram
+# manipulates Rotation[0]
 # do: Rotate armorstand tile one step by binding score to tile
 # return: void
 

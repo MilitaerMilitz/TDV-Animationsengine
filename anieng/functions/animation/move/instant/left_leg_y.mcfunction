@@ -1,5 +1,6 @@
 # @s: ani_act
 # input: #value
+# manipulates: Pose.LeftLeg.Y
 # do: Set armorstand tile instant to #value
 # return: void
 

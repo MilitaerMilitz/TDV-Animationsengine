@@ -1,5 +1,5 @@
 # @s: ani_act
-# uses: manipulates @s ani_time_walk
+# manipulates: @s ani_time_walk
 # do: Decrease time_walk timer and stop walking if timer reached 0.
 # return: void
 

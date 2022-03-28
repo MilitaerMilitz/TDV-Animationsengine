@@ -1,5 +1,6 @@
 # @s: ani_act
-# uses: @s ani_ram, manipulates Pose.RightArm.Z
+# uses: @s ani_ram, manipulates
+# manipulates Pose.RightArm.Z
 # do: Move armorstand tile one step by binding score to tile
 # return: void
 
