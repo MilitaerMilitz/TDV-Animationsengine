@@ -11,7 +11,7 @@ data modify entity @s Rotation[1] set from entity @e[tag=ani_tmp_align,sort=near
 execute store result score #rot ani_ram run data get entity @e[tag=ani_tmp_align,sort=nearest,limit=1] Rotation[0]
 scoreboard players operation #sollRot ani_ram = @s ani_rot_s
 
-function anieng:animation/walk/align_walk/walk_align
+function anieng:animation/walk/align_walk/calc_rot
 
 scoreboard players operation @s ani_rot_s = #rot ani_ram
 

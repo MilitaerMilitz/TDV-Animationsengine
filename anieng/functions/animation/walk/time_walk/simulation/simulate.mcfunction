@@ -1,10 +1,12 @@
 # @s: ani_act
-# pre: ani_in data.Action = {id: {}, static: {}, wspeed:{}, tbw:{}, narm:{}, ntep:{}, tit:{}} is valid tmw Action data
-# pre: ani_in data.StartData is defined
-# pre: #rot_s ani_ram is defined
-# pre: #rot_speed ani_ram is defined
-# do: Simulate time walk to calculate future end position.
-# post: ani_out data.EndData is defined
+#
+# input: ani_in data.Action = {id: {}, static: {}, wspeed:{}, tbw:{}, narm:{}, ntep:{}, tit:{}}
+# input: ani_in data.StartData
+# input: #rot_s ani_ram is defined
+# input: #rot_speed ani_ram is defined
+#
+# do: Simulate time walk by calculating future end position.
+#
 # return: ani_out data.EndData
 
 # if (ntep) return StartData;
