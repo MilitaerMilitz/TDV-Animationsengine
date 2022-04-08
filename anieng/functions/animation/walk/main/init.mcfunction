@@ -4,7 +4,7 @@
 # do: Initialize walking
 # return: void
 
-# tag = [walk, walk_pos, not walk_init]
+# tag management
 tag @s add ani_walk
 tag @s add ani_walk_pos
 tag @s remove ani_walk_init

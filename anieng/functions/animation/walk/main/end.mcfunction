@@ -19,7 +19,7 @@ execute unless entity @s[tag=ani_walk_nmod] unless entity @s[tag=ani_walk_abort]
 # actionRunning = false
 scoreboard players set @s ani_run 0
 
-# tag = not [walk, ... ]
+# tagClear()
 tag @s remove ani_walk
 tag @s remove ani_walk_pos
 tag @s remove ani_walk_narm

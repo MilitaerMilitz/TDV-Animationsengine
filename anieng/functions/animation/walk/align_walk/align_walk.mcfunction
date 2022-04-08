@@ -1,4 +1,6 @@
 # @s: ani_act
+# input: #rot ani_ram, #sollRot ani_ram
+# optional input: tag = ani_walk_rot_pos/neg
 # manipulates: @s Rotation
 # uses: walk engine
 # do: Perform align walk, by using normal walk engine and manipulating rotation

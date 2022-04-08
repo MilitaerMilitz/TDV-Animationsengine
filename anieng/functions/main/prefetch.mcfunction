@@ -19,16 +19,9 @@ scoreboard objectives add ani_if_sel_u2 dummy
 scoreboard objectives add ani_if_sel_u3 dummy
 
 scoreboard objectives add ani_walk_narm dummy
-scoreboard objectives add ani_walk_pnarm dummy
-
 scoreboard objectives add ani_walk_tbw dummy
-scoreboard objectives add ani_walk_ptbw dummy
-
 scoreboard objectives add ani_walk_ntep dummy
-scoreboard objectives add ani_walk_pntep dummy
-
 scoreboard objectives add ani_arwalk_rot dummy
-scoreboard objectives add ani_arwalk_prot dummy
 
 # Keyframe interface
 scoreboard objectives add ani_selkey dummy

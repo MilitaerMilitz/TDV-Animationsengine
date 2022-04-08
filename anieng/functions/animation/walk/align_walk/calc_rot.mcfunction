@@ -1,6 +1,6 @@
 # @s: ani_act
 # input: #rot ani_ram, #sollRot ani_ram
-# controll: tag = ani_walk_rot_pos/neg
+# optional input: tag = ani_walk_rot_pos/neg
 # manipulates: @s Rotation
 # do: Moves the magical border -180/180 degrees, so that armorstand rotate always shortest way. Direction of rotation can be controlled with ani_walk_rot_pos/neg
 # return: #rot ani_ram

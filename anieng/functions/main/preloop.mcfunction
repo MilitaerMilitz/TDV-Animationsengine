@@ -9,10 +9,6 @@ execute as @e[tag=ani_act,tag=!ani_pause,type=armor_stand] at @s run function an
 # glowing of selected Armorstands
 execute as @e[tag=ani_glow,type=armor_stand] run effect give @s glowing 1 1 true
 
-# Chek UI is activ
-# UI set up
-execute as @a[scores={ani_ram=1..}] at @s run setblock ~ -64 ~ oak_sign 
-
 
 # Armorstand view
 execute as @a[scores={ani_ram=100}] at @s run function anieng:interface/arm/armorstand_setings_view
@@ -44,7 +40,3 @@ execute as @a[scores={ani_ram=400}] at @s run function anieng:interface/kfv/keyf
 
 # Deactivated keyframe view
 execute as @a[scores={ani_ram=401}] at @s run function anieng:interface/kfv/keyframe_deactive
-
-
-#UI corekt
-execute as @a[scores={ani_ram=1..}] at @s run setblock ~ -64 ~ bedrock
